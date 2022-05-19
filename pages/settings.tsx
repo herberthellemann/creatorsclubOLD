@@ -1,12 +1,12 @@
-// app.creatorsclub.world/
+// app.creatorsclub.world/settings
 
 import type { NextPage } from "next";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout/Layout";
 
-const Home: NextPage = () => {
-  const { data: session } = useSession();
+const Settings: NextPage = () => {
+  const { data: session, status } = useSession();
   const router = useRouter();
 
   // Verify session
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     return (
       <Layout>
         <div>
-          <h1>Home page</h1>
+          <h1>Settings page</h1>
         </div>
       </Layout>
     );
@@ -33,4 +33,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Settings;

@@ -1,0 +1,31 @@
+.topWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.button {
+  font-size: 1rem;
+  color: #000000;
+  height: 3rem;
+  border: 2px solid #000000;
+  border-radius: 0.25rem;
+  align-items: center;
+  background: transparent;
+  padding: 0.75em 2em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #000000;
+  color: #ffffff;
+}
